@@ -23,7 +23,7 @@ export default {
 
     const dlCount = parsedEmail.text ? extractDlCount(parsedEmail.text) : -1;
 
-    const content = `昨日のDL数: ${dlCount}`;
+    const content = `昨日のDL数: ${dlCount}` + '\n' + env.ART19_ADMIN_STATISTICS_URL;
 
     await postToSlack(content);
   },

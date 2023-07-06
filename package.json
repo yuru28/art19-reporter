@@ -7,7 +7,7 @@
     "lint:fix": "eslint --fix ./**/*.ts",
     "format": "prettier -w ./**/*.ts",
     "fix": "npm run format && npm run lint:fix",
-    "deploy": "wrangler publish",
+    "deploy": "wrangler deploy",
     "start": "wrangler dev"
   },
   "devDependencies": {

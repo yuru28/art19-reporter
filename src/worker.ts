@@ -1,7 +1,7 @@
-import { Env } from './interfaces';
+import { ForwardableEmailMessage } from '@cloudflare/workers-types';
 
 export default {
-  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-    return new Response('Hello World!');
+  async email(email: ForwardableEmailMessage): Promise<void> {
+    console.log(`received email from ${email.from} to ${email.to}`);
   },
 };

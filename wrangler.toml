@@ -6,7 +6,7 @@ compatibility_date = "2023-07-06"
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
 [vars]
-ALLOWED_SENDERS = "support@art19.com,takuya.mk96@gmail.com"
+ALLOWED_SENDERS = "support@art19.com,takuya.mk96@gmail.com,takuya.mk96+caf_=report=yuru28.com@gmail.com"
 
 # Bind a KV Namespace. Use KV as persistent storage for small key-value pairs.
 # Docs: https://developers.cloudflare.com/workers/runtime-apis/kv
